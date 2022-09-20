@@ -4,10 +4,136 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;400;600&display=swap" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/9a3dbda65a.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/style.css" />
     <title>Boiler</title>
   </head>
-  <body>
-    <h1 class="bg-red-900">Hi</h1>
+  <body class="flex flex-row font-sans">
+    <!-- Navigation -->
+    <nav class="bg-darkPurple w-[350px] h-screen items-center justify-center p-10 hidden top-0 left-0 bottom-0 lg:fixed lg:flex">
+      <ul class="w-full">
+        <li class="menu-line-item">
+          <a href="#landing" class="menu-line-item_link">Welcome</a>
+        </li>
+        <li class="menu-line-item">
+          <a href="#about" class="menu-line-item_link">About</a>
+        </li>
+        <li class="menu-line-item">
+          <a href="#projects" class="menu-line-item_link">Projects</a>
+        </li>
+        <li class="menu-line-item">
+          <a href="#contact" class="menu-line-item_link">Get int Touch</a>
+        </li>
+      </ul>
+    </nav>
+    <!-- Main -->
+    <main class="bg-lightPurple w-screen lg:ml-[350px]">
+      <!-- Section: Landing -->
+      <section id="landing" class="flex items-center w-full h-[450px] p-10 md:h-screen md:p-20">
+        <div class="content-container space-y-5 z-10">
+          <h1 class="text-4xl font-semibold text-white md:text-5xl">Jose Chaparro</h1>
+          <p class="text-lightGrey text-xl md:max-w-xl md:text-2xl">Frontend Developer working proficiently with HTML, CSS, TailwindCSS and JavaScript.</p>
+          <div class="button-container flex flex-col space-y-4 md:space-y-0 md:space-x-2 md:flex-row">
+            <a href="#about" class="btn">About</a>
+            <a href="#projects" class="btn">Projects</a>
+          </div>
+        </div>
+      </section>
+      <!-- Section: About -->
+      <section id="about" class="bg-darkPink p-10 md:p-20">
+        <div>
+          <!-- Heading -->
+          <div class="section-heading mb-10 space-y-4">
+            <h2 class="text-white text-2xl font-bold md:text-3xl lg:text-4xl">About Me</h2>
+            <p class="text-[#E1B4D0] text-lg">I'm a Web Developer who enjoys turning UI/UX Designs into live working sites. My coding journey started in 2018 and quickly became a daily hobby. I am currently growing my understanding in Vanilla JavaScript and diving into React JS.</p>
+          </div>
+          <!-- Grid -->
+          <div class="grid grid-cols-1 lg:grid-cols-2">
+            <!-- Grid item -->
+            <div class="grid-item flex flex-row p-4">
+              <div class="icon mr-5">
+                <span class="fa-stack">
+                  <i class="fa-solid fa-circle fa-stack-2x text-white"></i>
+                  <i class="fa-solid fa-school fa-stack-1x fa-inverse text-darkPink"></i>
+                </span>
+              </div>
+              <div class="content">
+                <h3 class="text-lg mb-3">Bootcamp</h3>
+                <p class="text-[#E1B4D0] leading-7">In 2018 I enrolled and completed the University of Arizona 24 Week Coding Bootcamp</p>
+              </div>
+            </div>
+            <!-- Grid item -->
+            <div class="grid-item flex flex-row">
+              <div class="icon mr-5">
+                <span class="fa-stack">
+                  <i class="fa-solid fa-circle fa-stack-2x text-white"></i>
+                  <i class="fa-solid fa-book fa-stack-1x fa-inverse text-darkPink"></i>
+                </span>
+              </div>
+              <div class="content">
+                <h3 class="text-lg mb-3">Self Taught</h3>
+                <p class="text-[#E1B4D0] leading-7">I've spent my recent months reading Vanilla JavaScript and TailwindCSS documentation and applying what I've read into my projects.</p>
+              </div>
+            </div>
+            <!-- Grid item -->
+            <div class="grid-item flex flex-row">
+              <div class="icon mr-5">
+                <span class="fa-stack">
+                  <i class="fa-solid fa-circle fa-stack-2x text-white"></i>
+                  <i class="fa-solid fa-screwdriver-wrench fa-stack-1x fa-inverse text-darkPink"></i>
+                </span>
+              </div>
+              <div class="content">
+                <h3 class="text-lg mb-3">Tools I Use</h3>
+                <p class="text-[#E1B4D0] leading-7">HTML5, CSS, SASS, TailwindCSS, Git, JavaScript, React, VS Code, Figma, Adobe XD</p>
+              </div>
+            </div>
+            <!-- Grid item -->
+            <div class="grid-item flex flex-row">
+              <div class="icon mr-5">
+                <span class="fa-stack">
+                  <i class="fa-solid fa-circle fa-stack-2x text-white"></i>
+                  <i class="fa-solid fa-masks-theater fa-stack-1x fa-inverse text-darkPink"></i>
+                </span>
+              </div>
+              <div class="content">
+                <h3 class="text-lg mb-3">Frontend Mentor</h3>
+                <p class="text-[#E1B4D0] leading-7">I enjoy using Frontend Mentor as a way of challenging myself with different designs and goals. I've currently completed 21 challenges and am working currently working on reviewing / implementing the feedback received by other developers.</p>
+              </div>
+            </div>
+            <!-- Grid item -->
+            <div class="grid-item flex flex-row">
+              <div class="icon mr-5">
+                <span class="fa-stack">
+                  <i class="fa-solid fa-circle fa-stack-2x text-white"></i>
+                  <i class="fa-solid fa-note-sticky fa-stack-1x fa-inverse text-darkPink"></i>
+                </span>
+              </div>
+              <div class="content">
+                <h3 class="text-lg mb-3">Planning</h3>
+                <p class="text-[#E1B4D0] leading-7">I take a mobile first approach on all of my projects. I am currently enjoying TailwindCSS and I begin by configuring my project based on the Figma files received.</p>
+              </div>
+            </div>
+            <!-- Grid item -->
+            <div class="grid-item flex flex-row">
+              <div class="icon mr-5">
+                <span class="fa-stack">
+                  <i class="fa-solid fa-circle fa-stack-2x text-white"></i>
+                  <i class="fa-solid fa-flag fa-stack-1x fa-inverse text-darkPink"></i>
+                </span>
+              </div>
+              <div class="content">
+                <h3 class="text-lg mb-3">Lorem, ipsum dolor.</h3>
+                <p class="text-[#E1B4D0] leading-7">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos ratione adipisci saepe sapiente laudantium ipsum animi ipsa suscipit ad nobis.</p>
+              </div>
+            </div>
+          </div>
+          <!--  -->
+        </div>
+      </section>
+    </main>
   </body>
 </html>
