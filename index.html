@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;400;600&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;400;600;700&display=swap" rel="stylesheet" />
     <script src="https://kit.fontawesome.com/9a3dbda65a.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/style.css" />
     <title>Boiler</title>
@@ -15,16 +15,16 @@
     <!-- Navigation -->
     <nav class="bg-darkPurple w-[350px] h-screen items-center justify-center p-10 hidden top-0 left-0 bottom-0 lg:fixed lg:flex">
       <ul class="w-full">
-        <li class="menu-line-item">
-          <a href="#landing" class="menu-line-item_link">Welcome</a>
+        <li class="menu-line-item mb-5 active">
+          <a href="#landing" class="menu-line-item_link active">Welcome</a>
         </li>
-        <li class="menu-line-item">
+        <li class="menu-line-item mb-5">
           <a href="#about" class="menu-line-item_link">About</a>
         </li>
-        <li class="menu-line-item">
+        <li class="menu-line-item mb-5">
           <a href="#projects" class="menu-line-item_link">Projects</a>
         </li>
-        <li class="menu-line-item">
+        <li class="menu-line-item mb-5">
           <a href="#contact" class="menu-line-item_link">Get int Touch</a>
         </li>
       </ul>
@@ -48,90 +48,141 @@
           <!-- Heading -->
           <div class="section-heading mb-10 space-y-4">
             <h2 class="text-white text-2xl font-bold md:text-3xl lg:text-4xl">About Me</h2>
-            <p class="text-[#E1B4D0] text-lg">I'm a Web Developer who enjoys turning UI/UX Designs into live working sites. My coding journey started in 2018 and quickly became a daily hobby. I am currently growing my understanding in Vanilla JavaScript and diving into React JS.</p>
+            <p class="text-[#E1B4D0] text-lg">I'm a Web Developer who enjoys turning UI/UX Designs into live working sites. My coding journey started in 2018 and quickly became hobby. I am currently growing my understanding in Vanilla JavaScript and diving into React JS.</p>
           </div>
           <!-- Grid -->
           <div class="grid grid-cols-1 lg:grid-cols-2">
             <!-- Grid item -->
-            <div class="grid-item flex flex-row p-4">
-              <div class="icon mr-5">
-                <span class="fa-stack">
+            <div class="grid-item flex p-4">
+              <div class="icon mr-5 mb-5">
+                <span class="fa-stack lg:text-[40px]">
                   <i class="fa-solid fa-circle fa-stack-2x text-white"></i>
                   <i class="fa-solid fa-school fa-stack-1x fa-inverse text-darkPink"></i>
                 </span>
               </div>
               <div class="content">
-                <h3 class="text-lg mb-3">Bootcamp</h3>
-                <p class="text-[#E1B4D0] leading-7">In 2018 I enrolled and completed the University of Arizona 24 Week Coding Bootcamp</p>
+                <h3 class="text-lg mb-3 lg:text-2xl font-bold">Bootcamp</h3>
+                <p class="text-[#E1B4D0] leading-7 lg:text-xl">In 2018 I enrolled and completed the University of Arizona 24 Week Coding Bootcamp</p>
               </div>
             </div>
             <!-- Grid item -->
-            <div class="grid-item flex flex-row">
-              <div class="icon mr-5">
-                <span class="fa-stack">
+            <div class="grid-item flex">
+              <div class="icon mr-5 mb-5">
+                <span class="fa-stack lg:text-[40px]">
                   <i class="fa-solid fa-circle fa-stack-2x text-white"></i>
                   <i class="fa-solid fa-book fa-stack-1x fa-inverse text-darkPink"></i>
                 </span>
               </div>
               <div class="content">
-                <h3 class="text-lg mb-3">Self Taught</h3>
-                <p class="text-[#E1B4D0] leading-7">I've spent my recent months reading Vanilla JavaScript and TailwindCSS documentation and applying what I've read into my projects.</p>
+                <h3 class="text-lg mb-3 lg:text-2xl font-bold">Self Taught</h3>
+                <p class="text-[#E1B4D0] leading-7 lg:text-xl">I've spent my recent months reading Vanilla JavaScript and TailwindCSS documentation and applying what I've read into my projects.</p>
               </div>
             </div>
             <!-- Grid item -->
-            <div class="grid-item flex flex-row">
-              <div class="icon mr-5">
-                <span class="fa-stack">
+            <div class="grid-item flex">
+              <div class="icon mr-5 mb-5">
+                <span class="fa-stack lg:text-[40px]">
                   <i class="fa-solid fa-circle fa-stack-2x text-white"></i>
                   <i class="fa-solid fa-screwdriver-wrench fa-stack-1x fa-inverse text-darkPink"></i>
                 </span>
               </div>
               <div class="content">
-                <h3 class="text-lg mb-3">Tools I Use</h3>
-                <p class="text-[#E1B4D0] leading-7">HTML5, CSS, SASS, TailwindCSS, Git, JavaScript, React, VS Code, Figma, Adobe XD</p>
+                <h3 class="text-lg mb-3 lg:text-2xl font-bold">Tools I Use</h3>
+                <p class="text-[#E1B4D0] leading-7 lg:text-xl">HTML5, CSS, SASS, TailwindCSS, Git, JavaScript, React, VS Code, Figma, Adobe XD</p>
               </div>
             </div>
             <!-- Grid item -->
-            <div class="grid-item flex flex-row">
-              <div class="icon mr-5">
-                <span class="fa-stack">
+            <div class="grid-item flex">
+              <div class="icon mr-5 mb-5">
+                <span class="fa-stack lg:text-[40px]">
                   <i class="fa-solid fa-circle fa-stack-2x text-white"></i>
                   <i class="fa-solid fa-masks-theater fa-stack-1x fa-inverse text-darkPink"></i>
                 </span>
               </div>
               <div class="content">
-                <h3 class="text-lg mb-3">Frontend Mentor</h3>
-                <p class="text-[#E1B4D0] leading-7">I enjoy using Frontend Mentor as a way of challenging myself with different designs and goals. I've currently completed 21 challenges and am working currently working on reviewing / implementing the feedback received by other developers.</p>
+                <h3 class="text-lg mb-3 lg:text-2xl font-bold">Frontend Mentor</h3>
+                <p class="text-[#E1B4D0] leading-7 lg:text-xl">I enjoy using Frontend Mentor as a way of challenging myself with different designs and goals. I've currently completed 21 challenges and I'm currently reviewing / implementing the feedback received by other developers.</p>
               </div>
             </div>
             <!-- Grid item -->
-            <div class="grid-item flex flex-row">
-              <div class="icon mr-5">
-                <span class="fa-stack">
+            <div class="grid-item flex">
+              <div class="icon mr-5 mb-5">
+                <span class="fa-stack lg:text-[40px]">
                   <i class="fa-solid fa-circle fa-stack-2x text-white"></i>
                   <i class="fa-solid fa-note-sticky fa-stack-1x fa-inverse text-darkPink"></i>
                 </span>
               </div>
               <div class="content">
-                <h3 class="text-lg mb-3">Planning</h3>
-                <p class="text-[#E1B4D0] leading-7">I take a mobile first approach on all of my projects. I am currently enjoying TailwindCSS and I begin by configuring my project based on the Figma files received.</p>
+                <h3 class="text-lg mb-3 lg:text-2xl font-bold">Planning</h3>
+                <p class="text-[#E1B4D0] leading-7 lg:text-xl">I take a mobile first approach on all of my projects. I am currently enjoying TailwindCSS and I begin by configuring my project based on the Figma files received.</p>
               </div>
             </div>
             <!-- Grid item -->
-            <div class="grid-item flex flex-row">
-              <div class="icon mr-5">
-                <span class="fa-stack">
+            <div class="grid-item flex">
+              <div class="icon mr-5 mb-5">
+                <span class="fa-stack lg:text-[40px]">
                   <i class="fa-solid fa-circle fa-stack-2x text-white"></i>
-                  <i class="fa-solid fa-flag fa-stack-1x fa-inverse text-darkPink"></i>
+                  <i class="fa-solid fa-brain fa-stack-1x fa-inverse text-darkPink"></i>
                 </span>
               </div>
               <div class="content">
-                <h3 class="text-lg mb-3">Lorem, ipsum dolor.</h3>
-                <p class="text-[#E1B4D0] leading-7">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos ratione adipisci saepe sapiente laudantium ipsum animi ipsa suscipit ad nobis.</p>
+                <h3 class="text-lg mb-3 lg:text-2xl font-bold">Always Learning</h3>
+                <p class="text-[#E1B4D0] leading-7 lg:text-xl">Whether it's from Youtube or social media, I enjoy seeing what other developers create and share</p>
               </div>
             </div>
           </div>
           <!--  -->
+        </div>
+      </section>
+      <!-- Section: Projects -->
+      <section id="projects" class="bg-darkBlue">
+        <!-- Project -->
+        <div class="flex flex-col md:flex-row h-full w-full">
+          <img src="https://images.unsplash.com/photo-1498931299472-f7a63a5a1cfa?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8ZmlyZXdvcmtzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="Project Image" />
+          <div class="flex flex-col items-start justify-center p-8">
+            <h2 class="project-title text-2xl text-white">Project One</h2>
+            <p class="text-lg text-lightGrey mb-8">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus obcaecati placeat quae repellendus fuga amet itaque tempore voluptate molestias odit?</p>
+            <div class="button-container space-x-4">
+              <a href="#" class="btn">Source Code</a>
+              <a href="#" class="btn">Visit Site</a>
+            </div>
+          </div>
+        </div>
+        <!-- Project -->
+        <div class="flex flex-col md:flex-row h-full w-full">
+          <img src="https://images.unsplash.com/photo-1498931299472-f7a63a5a1cfa?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8ZmlyZXdvcmtzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="Project Image" />
+          <div class="flex flex-col items-start justify-center p-8">
+            <h2 class="project-title text-2xl text-white">Project One</h2>
+            <p class="text-lg text-lightGrey mb-8">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus obcaecati placeat quae repellendus fuga amet itaque tempore voluptate molestias odit?</p>
+            <div class="button-container space-x-4">
+              <a href="#" class="btn">Source Code</a>
+              <a href="#" class="btn">Visit Site</a>
+            </div>
+          </div>
+        </div>
+        <!-- Project -->
+        <div class="flex flex-col md:flex-row h-full w-full">
+          <img src="https://images.unsplash.com/photo-1498931299472-f7a63a5a1cfa?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8ZmlyZXdvcmtzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="Project Image" />
+          <div class="flex flex-col items-start justify-center p-8">
+            <h2 class="project-title text-2xl text-white">Project One</h2>
+            <p class="text-lg text-lightGrey mb-8">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus obcaecati placeat quae repellendus fuga amet itaque tempore voluptate molestias odit?</p>
+            <div class="button-container space-x-4">
+              <a href="#" class="btn">Source Code</a>
+              <a href="#" class="btn">Visit Site</a>
+            </div>
+          </div>
+        </div>
+        <!-- Project -->
+        <div class="flex flex-col md:flex-row h-full w-full">
+          <img src="https://images.unsplash.com/photo-1498931299472-f7a63a5a1cfa?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8ZmlyZXdvcmtzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="Project Image" />
+          <div class="flex flex-col items-start justify-center p-8">
+            <h2 class="project-title text-2xl text-white">Project One</h2>
+            <p class="text-lg text-lightGrey mb-8">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus obcaecati placeat quae repellendus fuga amet itaque tempore voluptate molestias odit?</p>
+            <div class="button-container space-x-4">
+              <a href="#" class="btn">Source Code</a>
+              <a href="#" class="btn">Visit Site</a>
+            </div>
+          </div>
         </div>
       </section>
     </main>

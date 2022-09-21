@@ -6,8 +6,19 @@
   @apply border-b-[2px] border-b-linkBorder py-3 text-right;
 }
 
+.menu-line-item.active {
+  border-bottom-width: 2px;
+  border-style: solid;
+  border-image: linear-gradient(to right, #5d42a6, #bc5896) 1;
+}
+
 .menu-line-item_link {
-  @apply text-darkGrey uppercase tracking-widest font-sans hover:text-lightGrey;
+  @apply text-darkGrey uppercase tracking-widest font-sans hover:text-lightGrey text-sm;
+}
+
+.menu-line-item_link.active {
+  font-weight: bold;
+  color: white;
 }
 
 .btn {
@@ -15,12 +26,14 @@
 }
 
 .grid-item {
-  @apply bg-lightPink border-[1px] border-[#C571A6] p-5 text-white;
+  min-height: 250px;
+  @apply bg-lightPink border-[1px] border-[#C571A6] p-5 text-white flex-col md:flex-row;
 }
 
 /* Custom Styling */
 #landing {
   background: url('/images/header-bg-two.jpg');
+  background-attachment: fixed;
   background-repear: no-repeat;
   background-position: center;
   object-fit: cover;
