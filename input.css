@@ -6,23 +6,23 @@
   @apply border-b-[2px] border-b-linkBorder py-3 text-right;
 }
 
-.menu-line-item.active {
+.active {
   border-bottom-width: 2px;
   border-style: solid;
   border-image: linear-gradient(to right, #5d42a6, #bc5896) 1;
+}
+
+.active a {
+  font-weight: bold;
+  color: white;
 }
 
 .menu-line-item_link {
   @apply text-darkGrey uppercase tracking-widest font-sans hover:text-lightGrey text-sm;
 }
 
-.menu-line-item_link.active {
-  font-weight: bold;
-  color: white;
-}
-
 .btn {
-  @apply border-[1px] border-lightGrey rounded-full py-3 px-10 text-white uppercase text-sm font-bold tracking-[2px] text-center;
+  @apply border-[1px] border-lightGrey rounded-full py-3 px-10 text-white uppercase text-sm font-bold tracking-[2px] text-center transition ease-in-out hover:scale-105;
 }
 
 .grid-item {
