@@ -1,9 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import 'animate.css';
 
 .menu-line-item {
-  @apply border-b-[2px] border-b-linkBorder py-3 text-right;
+  @apply border-b-[2px] border-b-linkBorder py-3 text-right lg:w-full;
 }
 
 .active {

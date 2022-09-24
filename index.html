@@ -14,8 +14,8 @@
   </head>
   <body class="flex flex-row font-sans">
     <!-- Navigation -->
-    <nav class="bg-darkPurple w-[350px] h-screen items-center justify-center p-10 hidden top-0 left-0 bottom-0 lg:fixed lg:flex">
-      <ul class="w-full">
+    <nav class="bg-darkPurple lg:w-[350px] md:w-full md:h-[90px] lg:h-screen items-center justify-center p-10 hidden md:fixed md:flex md:top-0 md:left-0 lmd:right-0 lg:top-0 lg:left-0 lg:bottom-0">
+      <ul class="w-full md:flex md:flex-row md:space-x-10 md:items-center md:justify-center lg:flex-col lg:space-x-0 lg:items-end lg:justify-center">
         <li class="menu-line-item mb-5 active">
           <a href="#landing" class="menu-line-item_link">Welcome</a>
         </li>
@@ -31,11 +31,11 @@
       </ul>
     </nav>
     <!-- Main -->
-    <main class="bg-lightPurple w-screen lg:ml-[350px]">
+    <main class="bg-lightPurple w-screen lg:ml-[350px] md:mt-[90px] lg:mt-0">
       <!-- Section: Landing -->
       <section id="landing" class="flex items-center w-full h-[450px] p-10 md:h-screen md:p-20">
         <div class="content-container space-y-5 z-10">
-          <h1 class="text-4xl font-semibold text-white md:text-5xl">Jose Chaparro</h1>
+          <h1 class="text-4xl font-semibold text-white md:text-6xl">Jose Chaparro</h1>
           <p class="text-lightGrey text-xl md:max-w-xl md:text-2xl">Frontend Developer working proficiently with HTML, CSS, TailwindCSS and JavaScript.</p>
           <div class="button-container flex flex-col space-y-4 md:space-y-0 md:space-x-2 md:flex-row">
             <a href="#about" class="btn">About</a>
@@ -128,7 +128,7 @@
               </div>
               <div class="content">
                 <h3 class="text-lg mb-3 lg:text-2xl font-bold">Always Learning</h3>
-                <p class="text-[#E1B4D0] leading-7 lg:text-xl">Whether it's from Youtube or social media, I enjoy seeing what other developers create and share</p>
+                <p class="text-[#E1B4D0] leading-7 lg:text-xl">Whether it's from Youtube or social media, I enjoy seeing what other developers create and looking into their source code.</p>
               </div>
             </div>
           </div>
@@ -139,25 +139,40 @@
       <section id="projects" class="bg-darkBlue">
         <!-- Project -->
         <div class="flex flex-col md:flex-row h-full w-full">
-          <img src="https://images.unsplash.com/photo-1498931299472-f7a63a5a1cfa?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8ZmlyZXdvcmtzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="Project Image" />
+          <img src="./images/todo-project.png" class="max-w-[500px]" alt="To Do Project" />
           <div class="flex flex-col items-start justify-center p-8">
-            <h2 class="project-title text-2xl text-white">Project One</h2>
-            <p class="text-lg text-lightGrey mb-8">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus obcaecati placeat quae repellendus fuga amet itaque tempore voluptate molestias odit?</p>
+            <h2 class="project-title text-2xl text-white">To Do List</h2>
+            <p class="text-lg text-lightGrey mb-8">
+              This was a Frontend Mentor challenge. The user is able to: <br />
+              - Add items to the to do list <br />
+              - Mark items as completed <br />
+              - Filter between All, Completed and Active items <br />
+              - View how many items are on the list <br />
+              - Delete items one by one <br />
+              - Delete all completed items at once <br />
+              - Toggle between a Light and Dark Theme
+            </p>
             <div class="button-container space-x-4">
-              <a href="#" class="btn">Source Code</a>
-              <a href="#" class="btn">Visit Site</a>
+              <a href="https://github.com/jchapar/ToDo_FEM" target="_blank" class="btn">Source Code</a>
+              <a href="https://jchapar.github.io/ToDo_FEM/" target="_blank" class="btn">Visit Site</a>
             </div>
           </div>
         </div>
         <!-- Project -->
         <div class="flex flex-col md:flex-row h-full w-full">
-          <img src="https://images.unsplash.com/photo-1498931299472-f7a63a5a1cfa?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8ZmlyZXdvcmtzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="Project Image" />
+          <img src="./images/calculator.png" class="max-w-[500px]" alt="Project Image" />
           <div class="flex flex-col items-start justify-center p-8">
-            <h2 class="project-title text-2xl text-white">Project One</h2>
-            <p class="text-lg text-lightGrey mb-8">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus obcaecati placeat quae repellendus fuga amet itaque tempore voluptate molestias odit?</p>
+            <h2 class="project-title text-2xl text-white">Calculator App</h2>
+            <p class="text-lg text-lightGrey mb-8">
+              This was another Frontend Mentor challange. The user is able to: <br />
+              - Do basic math operations <br />
+              - Delete a digit entered <br />
+              - Clear the input field <br />
+              - Toggle between 3 themes
+            </p>
             <div class="button-container space-x-4">
-              <a href="#" class="btn">Source Code</a>
-              <a href="#" class="btn">Visit Site</a>
+              <a href="https://github.com/jchapar/calculator_FEM" target="_blank" class="btn">Source Code</a>
+              <a href="https://jchapar.github.io/calculator_FEM/" target="_blank" class="btn">Visit Site</a>
             </div>
           </div>
         </div>
