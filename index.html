@@ -139,22 +139,22 @@
       <section id="projects" class="bg-darkBlue">
         <!-- Project -->
         <div class="flex flex-col md:flex-row h-full w-full">
-          <img src="./images/todo-project.png" class="max-w-[500px]" alt="To Do Project" />
+          <img src="./images/todo-project.png" class="max-w-[500px] object-cover" alt="To Do Project" />
           <div class="flex flex-col items-start justify-center p-8">
             <h2 class="project-title text-2xl text-white">To Do List</h2>
-            <p class="text-lg text-lightGrey mb-8">
-              This was a Frontend Mentor challenge. The user is able to: <br />
-              - Add items to the to do list <br />
-              - Mark items as completed <br />
-              - Filter between All, Completed and Active items <br />
-              - View how many items are on the list <br />
-              - Delete items one by one <br />
-              - Delete all completed items at once <br />
-              - Toggle between a Light and Dark Theme
+            <p class="text-lg text-lightGrey">
+              This was a Frontend Mentor challenge. The user is able to:
+              <p class="text-lg text-lightGrey mb-8">
+                This was another Frontend Mentor challange. The user is able to: <br />
+                - Do basic math operations <br />
+                - Delete a digit entered <br />
+                - Clear the input field <br />
+                - Toggle between 3 themes
+              </p>
             </p>
-            <div class="button-container space-x-4">
-              <a href="https://github.com/jchapar/ToDo_FEM" target="_blank" class="btn">Source Code</a>
-              <a href="https://jchapar.github.io/ToDo_FEM/" target="_blank" class="btn">Visit Site</a>
+            <div class="button-container md:space-x-0 md:space-y-3 lg:space-x-2">
+              <a href="https://github.com/jchapar/ToDo_FEM" target="_blank" class="btn md:block lg:inline-block">Source Code</a>
+              <a href="https://jchapar.github.io/ToDo_FEM/" target="_blank" class="btn md:block lg:inline-block">Visit Site</a>
             </div>
           </div>
         </div>
@@ -170,9 +170,9 @@
               - Clear the input field <br />
               - Toggle between 3 themes
             </p>
-            <div class="button-container space-x-4">
-              <a href="https://github.com/jchapar/calculator_FEM" target="_blank" class="btn">Source Code</a>
-              <a href="https://jchapar.github.io/calculator_FEM/" target="_blank" class="btn">Visit Site</a>
+            <div class="button-container md:space-x-0 md:space-y-3 lg:space-x-2">
+              <a href="https://github.com/jchapar/calculator_FEM" target="_blank" class="btn md:block lg:inline-block">Source Code</a>
+              <a href="https://jchapar.github.io/calculator_FEM/" target="_blank" class="btn md:block lg:inline-block">Visit Site</a>
             </div>
           </div>
         </div>
@@ -182,9 +182,9 @@
           <div class="flex flex-col items-start justify-center p-8">
             <h2 class="project-title text-2xl text-white">Project One</h2>
             <p class="text-lg text-lightGrey mb-8">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus obcaecati placeat quae repellendus fuga amet itaque tempore voluptate molestias odit?</p>
-            <div class="button-container space-x-4">
-              <a href="#" class="btn">Source Code</a>
-              <a href="#" class="btn">Visit Site</a>
+            <div class="button-container md:space-x-0 md:space-y-3 lg:space-x-2">
+              <a href="#" class="btn md:block lg:inline-block">Source Code</a>
+              <a href="#" class="btn md:block lg:inline-block">Visit Site</a>
             </div>
           </div>
         </div>
@@ -194,9 +194,9 @@
           <div class="flex flex-col items-start justify-center p-8">
             <h2 class="project-title text-2xl text-white">Project One</h2>
             <p class="text-lg text-lightGrey mb-8">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus obcaecati placeat quae repellendus fuga amet itaque tempore voluptate molestias odit?</p>
-            <div class="button-container space-x-4">
-              <a href="#" class="btn">Source Code</a>
-              <a href="#" class="btn">Visit Site</a>
+            <div class="button-container md:space-x-0 md:space-y-3 lg:space-x-2">
+              <a href="#" class="btn md:block lg:inline-block">Source Code</a>
+              <a href="#" class="btn md:block lg:inline-block">Visit Site</a>
             </div>
           </div>
         </div>
@@ -214,17 +214,17 @@
           <form class="space-y-5 border-b-[1px] border-b-[#806AB8] pb-10 lg:col-span-2 lg:border-none lg:pr-10">
             <div class="form-control flex flex-col space-y-4">
               <label for="name" class="text-white text-xl">Name</label>
-              <input type="text" class="py-2 px-4 rounded-sm text-[#E1B4D0] bg-fadedPurple border-[1px] border-[#806AB8] focus:outline-none" />
+              <input type="text" id="name" class="py-2 px-4 rounded-sm text-[#E1B4D0] bg-fadedPurple border-[1px] border-[#806AB8] focus:outline-none" />
             </div>
             <div class="form-control flex flex-col space-y-4">
               <label for="email" class="text-white text-xl">Email</label>
-              <input type="email" class="py-2 px-4 rounded-sm text-[#E1B4D0] bg-fadedPurple border-[1px] border-[#806AB8] focus:outline-none" />
+              <input type="email" id="email" class="py-2 px-4 rounded-sm text-[#E1B4D0] bg-fadedPurple border-[1px] border-[#806AB8] focus:outline-none" />
             </div>
             <div class="form-control flex flex-col space-y-4">
               <label for="message" class="text-white text-xl">Message</label>
               <textarea name="message" id="message" class="h-[200px] py-2 px-4 rounded-sm text-[#E1B4D0] bg-fadedPurple border-[1px] border-[#806AB8] focus:outline-none"></textarea>
             </div>
-            <a href="#" class="btn mt-5 inline-block">Send Message</a>
+            <button type="submit" id="submit-btn" class="btn mt-5 inline-block">Send Message</button>
           </form>
           <!-- Grid Item -->
           <div class="contact-info py-8 space-y-5 lg:py-0 lg:border-l-[1px] lg:pl-10">

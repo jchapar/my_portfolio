@@ -1,7 +1,6 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import 'animate.css';
 
 .menu-line-item {
   @apply border-b-[2px] border-b-linkBorder py-3 text-right lg:w-full;
@@ -23,7 +22,7 @@
 }
 
 .btn {
-  @apply border-[1px] border-lightGrey rounded-full py-3 px-10 text-white uppercase text-sm font-bold tracking-[2px] text-center transition ease-in-out hover:scale-105;
+  @apply border-[1px] border-lightGrey rounded-full py-3 px-4 text-xs text-white uppercase md:text-sm font-bold tracking-[2px] text-center transition ease-in-out hover:scale-105 md:py-3 md:px-10;
 }
 
 .grid-item {
